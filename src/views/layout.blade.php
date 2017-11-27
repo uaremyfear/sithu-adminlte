@@ -10,22 +10,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<title>BAGAN | OLD CITY</title>
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-	<link rel="stylesheet" href="{{ asset('vendor/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('sithu-adminlte/css/bootstrap.min.css') }}">
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="{{ asset('vendor/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('sithu-adminlte/css/font-awesome.min.css') }}">
 	<!-- Ionicons -->
-	<link rel="stylesheet" href="{{ asset('vendor/css/ionicons.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('sithu-adminlte/css/ionicons.min.css') }}">
 
-	<link rel="stylesheet" href="{{ asset('vendor/css/dataTables.bootstrap.css') }}">
+	<link rel="stylesheet" href="{{ asset('sithu-adminlte/css/dataTables.bootstrap.css') }}">
 
 
 
 	<!-- Theme style -->
-	<link rel="stylesheet" href="{{ asset('/vendor/css/AdminLTE.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('/sithu-adminlte/css/AdminLTE.min.css') }}">
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
     page. However, you can choose any other skin. Make sure you
     apply the skin class to the body tag so the changes take effect. -->
-    <link rel="stylesheet" href="{{ asset('/vendor/css/skin-blue.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/sithu-adminlte/css/skin-blue.min.css') }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -90,7 +90,7 @@ desired effect
 							onclick="event.preventDefault();
 							document.getElementById('logout-form').submit();">
 							<!-- The user image in the navbar-->
-							<img src="{{ asset('vendor/imgs/profile.jpg') }}" class="user-image" alt="User Image">
+							<img src="{{ asset('sithu-adminlte/imgs/profile.jpg') }}" class="user-image" alt="User Image">
 							<!-- hidden-xs hides the username on small devices so only the image appears. -->
 							<span class="hidden-xs">
 
@@ -115,7 +115,7 @@ desired effect
 			<!-- Sidebar user panel (optional) -->
 			<div class="user-panel">
 				<div class="pull-left image">
-					<img src="{{ asset('vendor/imgs/profile.jpg') }}" class="img-circle" alt="User Image">
+					<img src="{{ asset('sithu-adminlte/imgs/profile.jpg') }}" class="img-circle" alt="User Image">
 				</div>
 				<div class="pull-left info">
 					<p>Admin</p>
@@ -129,8 +129,8 @@ desired effect
 				<li class="header">HEADER</li>
 				<!-- Optionally, you can add icons to the links -->
 				<li class="active"><a href="{{ url('/admin') }}"><i class="fa fa-link"></i> <span>HOME</span></a></li>
-				<li><a href="{{ route('pagoda.index') }}"><i class="fa fa-link"></i> <span>Pagoda</span></a></li>
-				<li><a href="{{ route('founder.index') }}"><i class="fa fa-link"></i> <span>Founder</span></a></li>
+				{{-- <li><a href="{{ route('pagoda.index') }}"><i class="fa fa-link"></i> <span>Pagoda</span></a></li>
+				<li><a href="{{ route('founder.index') }}"><i class="fa fa-link"></i> <span>Founder</span></a></li> --}}
 				<li class="treeview">
 					<a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
 						<span class="pull-right-container">
@@ -268,11 +268,11 @@ desired effect
 
     <!-- jQuery 3 -->
 
-    <script src="{{ asset('vendor/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('sithu-adminlte/js/jquery.min.js') }}"></script>
     <!-- Bootstrap 3.3.7 -->
-    <script src="{{ asset('vendor/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('sithu-adminlte/js/bootstrap.min.js') }}"></script>
     <!-- AdminLTE App -->
-    <script src="{{ asset('vendor/js/adminlte.min.js') }}"></script>
+    <script src="{{ asset('sithu-adminlte/js/adminlte.min.js') }}"></script>
     
     @yield('script')
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
@@ -280,8 +280,8 @@ desired effect
     user experience. -->
 
     <!-- DataTables -->
-    <script src="{{ asset('/vendor/js/jquery.dataTables.min.js') }} "></script>
-    <script src="{{ asset('/vendor/js/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/sithu-adminlte/js/jquery.dataTables.min.js') }} "></script>
+    <script src="{{ asset('/sithu-adminlte/js/dataTables.bootstrap.min.js') }}"></script>
     <script>
     	$(function () {
     		$('#example1').DataTable({

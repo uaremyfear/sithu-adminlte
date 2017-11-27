@@ -19,6 +19,17 @@
         }
     },
     "require": {
-    	"illuminate/support": "~5"
+    	"illuminate/support": "~5",
+        "sithu/adminlte": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sithu\\Adminlte\\AdminlteServiceProvider"
+            ],
+            "aliases": {
+                "Adminlte": "Sithu\\Adminlte\\AdminlteFacade"
+            }
+        }
     }
 }
